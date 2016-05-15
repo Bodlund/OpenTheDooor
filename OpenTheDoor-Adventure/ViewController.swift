@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     @IBAction func tempButton(sender: AnyObject) {
         
-        printStoryText("Welcome to OpenTheDoor")
+        printStoryText("Welcome to OpenTheDoor", clickable: false)
         
     }
     var lastPosition : CGPoint = CGPointMake(0, 0)
@@ -24,6 +24,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Loaded Main View")
+        for line in introOne{
+            printStoryText(line, clickable: false)
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,7 +34,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func printStoryText(textToPrint:String) {
+    func printStoryText(textToPrint:String, clickable: Bool) {
         
         let labelFrame = CGRectMake(Constants.xDistanceBeforeTextLabel, lastPosition.y + Constants.textLabelHeight + (Constants.yDistanceBeforeNextTextLabel), Constants.textLabelWidth, Constants.textLabelHeight)
         //let labelFrame = CGRectMake(0, 200, 320, 200)
@@ -42,7 +45,18 @@ class ViewController: UIViewController {
         newTextLabel.textColor = UIColor.blackColor()
         mainScrollView?.addSubview(newTextLabel)
         newTextLabel.text = textToPrint
+        
+        if clickable {
+            let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.textClicked(_:)))
+            tapGesture.numberOfTapsRequired = 1
+            newTextLabel.userInteractionEnabled =  true
+            newTextLabel.addGestureRecognizer(tapGesture)
+        }
 
+    }
+    
+    func textClicked(sender: UITapGestureRecognizer) {
+        print("-TAP-")
     }
     
 }

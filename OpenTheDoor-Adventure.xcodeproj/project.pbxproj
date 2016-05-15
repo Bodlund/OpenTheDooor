@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F1AF2941CE8E472006B1228 /* Chapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1AF2931CE8E472006B1228 /* Chapters.swift */; };
+		7F1AF2961CE8E482006B1228 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1AF2951CE8E482006B1228 /* Room.swift */; };
+		7F1AF2981CE8EAF4006B1228 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1AF2971CE8EAF4006B1228 /* Character.swift */; };
 		99E605E01CE7BFCC0036885E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E605DF1CE7BFCC0036885E /* AppDelegate.swift */; };
 		99E605E21CE7BFCC0036885E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E605E11CE7BFCC0036885E /* ViewController.swift */; };
 		99E605E51CE7BFCC0036885E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E605E31CE7BFCC0036885E /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F1AF2931CE8E472006B1228 /* Chapters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapters.swift; sourceTree = "<group>"; };
+		7F1AF2951CE8E482006B1228 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		7F1AF2971CE8EAF4006B1228 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		99E605DC1CE7BFCC0036885E /* OpenTheDoor-Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenTheDoor-Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E605DF1CE7BFCC0036885E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E605E11CE7BFCC0036885E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +72,9 @@
 				99E605E61CE7BFCC0036885E /* Assets.xcassets */,
 				99E605E81CE7BFCC0036885E /* LaunchScreen.storyboard */,
 				99E605EB1CE7BFCC0036885E /* Info.plist */,
+				7F1AF2931CE8E472006B1228 /* Chapters.swift */,
+				7F1AF2951CE8E482006B1228 /* Room.swift */,
+				7F1AF2971CE8EAF4006B1228 /* Character.swift */,
 			);
 			path = "OpenTheDoor-Adventure";
 			sourceTree = "<group>";
@@ -141,7 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F1AF2941CE8E472006B1228 /* Chapters.swift in Sources */,
 				99E605F41CE7D6940036885E /* CLTypingLabel.swift in Sources */,
+				7F1AF2981CE8EAF4006B1228 /* Character.swift in Sources */,
+				7F1AF2961CE8E482006B1228 /* Room.swift in Sources */,
 				99E605E21CE7BFCC0036885E /* ViewController.swift in Sources */,
 				99E605E01CE7BFCC0036885E /* AppDelegate.swift in Sources */,
 				99E605F21CE7C0E00036885E /* CommonVarAndEnums.swift in Sources */,
@@ -296,6 +308,7 @@
 				99E605F01CE7BFCC0036885E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
