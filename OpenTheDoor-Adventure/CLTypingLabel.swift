@@ -46,7 +46,7 @@ enum CLTypingLabelKind {
      Set interval time between each characters
      */
     @IBInspectable public var charInterval: Double = 0.1
-    
+
     /*
      SizeToFit label after each character
      */
@@ -166,6 +166,7 @@ enum CLTypingLabelKind {
                     }
                 }
                 
+                
                 NSThread.sleepForTimeInterval(charInterval)
             }
             
@@ -200,12 +201,22 @@ enum CLTypingLabelKind {
                         self.sizeToFit()
                     }
                 }
-                
-                NSThread.sleepForTimeInterval(charInterval)
+                let sleepRand = self.randomFloat(0.01, max: 0.1)
+                NSThread.sleepForTimeInterval(Double(sleepRand))
             }
             
             self.typingOver = true
             self.typingStopped = false
         }
     }
+    
+    func random() -> CGFloat {
+        return CGFloat(Float(arc4random()) / 0xFFFFFFFF)
+    }
+    
+    func randomFloat(min: CGFloat, max: CGFloat) -> CGFloat {
+        return random() * (max - min) + min
+    }
+    
+    
 }

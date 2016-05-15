@@ -15,7 +15,6 @@ struct Constants {
     static let screenWidth      = UIScreen.mainScreen().bounds.width
     static let screenHeight     = UIScreen.mainScreen().bounds.height
     
-    
     //Constants For TextLabels for use on scrollview
     static let xDistanceBeforeTextLabel     = screenWidth/100
     static let yDistanceBeforeNextTextLabel = screenWidth/320
